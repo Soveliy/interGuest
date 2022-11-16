@@ -13,11 +13,11 @@ window.app.Sliders = () => {
                el: '.gallery-preview__scrollbar',
              },
             breakpoints: {
-               576: {
+               768: {
                   direction: 'vertical',
                   spaceBetween: 20,
                },
-               992: {
+               1360: {
                   direction: 'vertical',
                   spaceBetween: 30,
                }

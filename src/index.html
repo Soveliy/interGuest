@@ -37,16 +37,18 @@
               </button>
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">номера</a>
+                  <a href="#section-1" class="menu__link js-anchor">номера</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">услуги</a>
+                  <a href="#section-2" class="menu__link js-anchor">услуги</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Преимущества</a>
+                  <a href="#section-3" class="menu__link js-anchor"
+                    >Преимущества</a
+                  >
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">контакты</a>
+                  <a href="#section-4" class="menu__link js-anchor">контакты</a>
                 </li>
               </ul>
             </div>
@@ -72,7 +74,7 @@
                   <label class="field__label">
                     <input
                       type="text"
-                      id="form"
+                      id="from"
                       name="from"
                       class="input field__input"
                       placeholder="Прибытие"
@@ -101,7 +103,7 @@
                   </label>
                 </div>
                 <div class="field form__field col">
-                  <label class="field__label">
+                  <label class="field__label quantity">
                     <input
                       type="text"
                       id="count"
@@ -113,6 +115,38 @@
                         xlink:href="svg-sprite/svg-sprite.svg#arrow-drop"
                       ></use>
                     </svg>
+                    <ul class="quantity__list">
+                      <li class="go-js-choice-item">
+                        <label class="choice-box__label choice-element">
+                          <span class="choice-box__name">1 гость</span>
+                          <input
+                            class="choice-box__input"
+                            name="count"
+                            type="radio"
+                          />
+                        </label>
+                      </li>
+                      <li class="go-js-choice-item">
+                        <label class="choice-box__label choice-element">
+                          <span class="choice-box__name">2 гостя</span>
+                          <input
+                            class="choice-box__input"
+                            name="count"
+                            type="radio"
+                          />
+                        </label>
+                      </li>
+                      <li class="go-js-choice-item">
+                        <label class="choice-box__label choice-element">
+                          <span class="choice-box__name">3 гостя</span>
+                          <input
+                            class="choice-box__input"
+                            name="count"
+                            type="radio"
+                          />
+                        </label>
+                      </li>
+                    </ul>
                   </label>
                 </div>
                 <div class="col">
@@ -126,7 +160,7 @@
         </div>
       </section>
 
-      <section class="category section main__section">
+      <section id="section-1" class="category section main__section">
         <div class="container">
           <div class="section__wrapper">
             <h2 class="section__title title">Категории номеров</h2>
@@ -783,7 +817,7 @@
         </div>
       </section>
 
-      <section class="services section main__section">
+      <section id="section-2" class="services section main__section">
         <div class="container">
           <div class="section__wrapper">
             <h2 class="section__title title">услуги</h2>
@@ -936,7 +970,7 @@
         </div>
       </section>
 
-      <section class="services section page__section">
+      <section id="section-3" class="services section page__section">
         <div class="container">
           <div class="section__wrapper">
             <h2 class="section__title title">Особенности отеля</h2>
@@ -994,7 +1028,7 @@
     <!-- / Main -->
 
     <!-- Footer -->
-    <footer class="page__footer footer section">
+    <footer id="section-4" class="page__footer footer section">
       <div class="contacts">
         <div class="container">
           <div class="contacts__wrapper">

@@ -79,3 +79,21 @@
       padding: 17px 45px 17px 15px;
    }
 }
+
+.quantity {
+   &__list {
+      position: absolute;
+      top: 102%;
+      width: 100%;
+      background-color: #FFF;
+      li {
+         padding: 10px;
+         color: $primary;
+         transition: all 0.2s linear;
+         &:hover {
+            background-color: $secondary;
+            color: #FFF;
+         }
+      }
+   }
+}
