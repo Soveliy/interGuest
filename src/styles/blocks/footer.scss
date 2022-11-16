@@ -1,0 +1,293 @@
+.footer {
+   background-color: $primary;
+
+   h2.title {
+      color: #FFF;
+   }
+
+   &__copyright {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 15px 0;
+
+      @media screen and (min-width: 1360px) {
+         padding: 20px 0;
+      }
+   }
+   .contacts {
+      background-color: $primary;
+      padding-top: 30px;
+      &-list {
+         display: flex;
+         flex-direction: column;
+         &__section {
+            padding: 13px 15px;
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+            justify-content: center;
+            &:first-child {
+               background-color: $background;
+            }
+            &:last-child {
+               background-color: #FFF;
+            }
+   
+            span {
+               font-weight: 500;
+               font-size: 14px;
+               line-height: 1.5;
+               color: $primary;
+            }
+   
+            ul {
+               li {
+                  padding-bottom: 10px;
+                  &:last-child {
+                     padding-bottom: 0;
+                  }
+                  a {
+                     display: flex;
+                     align-items: center;
+
+                     font-weight: 500;
+                     font-size: 14px;
+                     line-height: 1.5;
+                     color: $primary;
+                     transition: color 0.2s linear;
+   
+                     .icon {
+                        width: 20px;
+                        height: 20px;
+                        fill: $secondary;
+                        margin-right: 10px;
+                     }
+
+                     &:hover {
+                        color: $secondary;
+                     }
+
+                     @media screen and (min-width: 768px) {
+                        font-size: 18px;
+                     }
+                     @media screen and (min-width: 1360px) {
+                        font-size: 20px;
+                     }
+                  }
+
+                  @media screen and (min-width: 768px) {
+                     padding-bottom: 12px;
+                  }
+
+                  @media screen and (min-width: 1360px) {
+                     padding-bottom: 0;
+                  }
+               }
+   
+               @media screen and (min-width: 1360px) {
+                  display: flex;
+                  li {
+                     padding: 0 30px;
+                     position: relative;
+                     &:first-child {
+                        padding-left: 0;
+                     }
+                     &:last-child {
+                        padding-right: 0;
+                     }
+   
+                     &::after {
+                        content: '';
+                        display: block;
+                        width: 1px;
+                        height: 100%;
+                        background-color: $background;
+   
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                     }
+   
+                     &:last-child {
+                        &::after {
+                           display: none;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+   
+         @media screen and (min-width: 768px) {
+            flex-direction: row;
+   
+            &__section {
+               width: 50%;
+               span {
+                  font-size: 18px;
+               }
+            }
+         }
+   
+         @media screen and (min-width: 1360px) {
+            &__section {
+               span {
+                  font-size: 20px;
+               }
+   
+               &:first-child {
+                  flex: 0 0 420px;
+               }
+            }
+         }
+      }
+
+      &__info {
+         margin-bottom: 30px;
+         @media screen and (min-width: 768px) {
+            margin-bottom: 40px;
+         }
+      }
+   
+      @media screen and (min-width: 1360px) {
+         padding-top: 53px;
+      }
+      &__map {
+         width: 100%;
+         height: 321px;
+         margin-bottom: 20px;
+         @media screen and (min-width: 768px) {
+            margin-bottom: 27px;
+            height: 287px;
+         }
+         @media screen and (min-width: 1360px) {
+            margin-bottom: 70px;
+            height: 500px;
+         }
+      }
+
+      .btn {
+         width: 30px;
+         height: 30px;
+         display: block;
+         background-color: $primary;
+      }
+   
+   }
+   
+   .contact-info {
+      display: flex;
+      flex-direction: column;
+   
+      &__section {
+         width: 100%;
+         &:first-child {
+            margin-bottom: 30px;
+         }
+      }
+      @media screen and (min-width: 768px) {
+         flex-direction: row;
+
+         &__section {
+            width: 50%;
+            &:first-child {
+               margin-bottom: 0;
+            }
+         }
+      }
+   }
+   
+   .info-details {
+      &__item {
+         margin-bottom: 15px;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   
+      &__link {
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 1.3;
+         color: #FFF;
+         text-transform: uppercase;
+         transition: color 0.2s linear;
+         &:hover {
+            color: $secondary;
+         }
+      }
+   }
+   
+   .info-us {
+      display: flex;
+      flex-direction: column;
+      &__name {
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 1.3;
+         color: #FFF;
+         margin-bottom: 10px;
+      }
+   
+      &__list {
+         display: flex;
+         flex-wrap: wrap;
+         margin-left: -7px;
+         @media screen and (min-width: 768px) {
+            margin-left: -10px;
+         }
+
+         @media screen and (min-width: 1360px) {
+            margin-left: -20px;
+         }
+      }
+   
+      &__item {
+         padding: 0 7px;
+         &:last-child {
+            padding-right: 0;
+         }
+      }
+   
+      &__link {
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 1.3;
+         text-decoration: underline;
+         color: $secondary;
+         transition: color 0.2s linear;
+      }
+      @media screen and (min-width: 768px) {
+         &__item {
+            padding: 0 10px;
+         }
+      }
+      @media screen and (min-width: 1360px) {
+         flex-direction: row;
+         &__name {
+            margin-bottom: 0;
+            margin-right: 40px;
+         }
+   
+         &__item {
+            padding: 0 20px;
+         }
+   
+         &__link {
+            color: $secondary;
+            &:hover {
+               color: #FFF;
+            }
+         }
+      }
+   }
+
+   .copyright {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.3;
+      color: $background;
+      @media screen and (min-width: 768px) {
+         font-size: 14px;
+      }
+   }
+}

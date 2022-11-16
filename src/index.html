@@ -1,0 +1,1106 @@
+@@include('includes/header.html', { 'title' : 'New Project' })
+
+<!-- Page -->
+<div class="page">
+  <div class="page__box">
+    <!-- Header -->
+    <header class="page__header header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="header__logo">
+            <img src="images/icons/logo.svg" alt="logo" />
+          </a>
+          <div class="header__activities">
+            <a href="tel:+7(968)4400600" class="phone">
+              <svg class="icon">
+                <use xlink:href="svg-sprite/svg-sprite.svg#phone"></use>
+              </svg>
+              <span>7 (968) 4-400-600</span>
+            </a>
+            <div class="language">
+              <label class="language__item language__item--ru">
+                <input type="radio" checked name="lang" id="ru" />
+                <span class="language__btn">
+                  <span>ru</span>
+                </span>
+              </label>
+              <label class="language__item language__item--en">
+                <input type="radio" name="lang" id="en" />
+                <span class="language__btn">
+                  <span>en</span>
+                </span>
+              </label>
+            </div>
+            <div class="menu">
+              <button type="button" class="burger go-js-burger">
+                <span></span>
+              </button>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">номера</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">услуги</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Преимущества</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- / Header -->
+    <!-- Main -->
+    <main class="page__main main">
+      <!--Section-->
+      <section class="banner main__banner section main__section">
+        <div class="container">
+          <div class="banner__wrapper">
+            <h1 class="title banner__title">
+              Гостеприимство и комфорт в любое время
+            </h1>
+            <div class="calendar">
+              <form
+                class="calendar__wrapper form row row-cols-1 row-cols-sm-2 row-cols-md-4"
+              >
+                <div class="field form__field col">
+                  <label class="field__label">
+                    <input
+                      type="text"
+                      id="form"
+                      name="from"
+                      class="input field__input"
+                      placeholder="Прибытие"
+                    />
+                    <svg class="icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#calendar"
+                      ></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="field form__field col">
+                  <label class="field__label">
+                    <input
+                      type="text"
+                      id="to"
+                      name="to"
+                      class="input field__input"
+                      placeholder="Выезд"
+                    />
+                    <svg class="icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#calendar"
+                      ></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="field form__field col">
+                  <label class="field__label">
+                    <input
+                      type="text"
+                      id="count"
+                      class="input field__input"
+                      placeholder="Кол-во гостей"
+                    />
+                    <svg class="icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#arrow-drop"
+                      ></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="col">
+                  <button type="button" class="btn calendar__btn">
+                    Найти номер
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="category section main__section">
+        <div class="container">
+          <div class="section__wrapper">
+            <h2 class="section__title title">Категории номеров</h2>
+            <div class="category__block grid">
+              <div class="grid__item">
+                <div class="room-card">
+                  <img
+                    class="room-card__bg"
+                    src="images/content/room-solo.png"
+                    alt="room-photo"
+                  />
+                  <div class="room-card__wrapper">
+                    <h3 class="room-card__title">Стандарт одноместный</h3>
+                    <div class="room-card__desc">
+                      <svg class="icon room-card__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#user"></use>
+                      </svg>
+                      <span>2 односпальные кровати (120 см)</span>
+                    </div>
+                    <div class="room-card__info">
+                      <span class="room-card__area">19 м²</span>
+                      <div class="room-card__comfort comfort">
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cold"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#4k"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cup-hot"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#snowflake"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#safe"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#wifi"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#car"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#window"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#foot"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="room-card__buttons box-buttons">
+                      <button
+                        type="button"
+                        class="btn btn--border box-buttons__left"
+                      >
+                        <svg class="icon">
+                          <use
+                            xlink:href="svg-sprite/svg-sprite.svg#info"
+                          ></use>
+                        </svg>
+                        <span>подробнее</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn--path box-buttons__right"
+                      >
+                        Забронировать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid__item">
+                <div class="room-card">
+                  <img
+                    class="room-card__bg"
+                    src="images/content/room-duble.png"
+                    alt="room-photo"
+                  />
+                  <div class="room-card__wrapper">
+                    <h3 class="room-card__title">Стандарт двухместный</h3>
+                    <div class="room-card__desc">
+                      <svg class="icon room-card__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#user"></use>
+                      </svg>
+                      <svg class="icon room-card__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#user"></use>
+                      </svg>
+                      <span>2 односпальные кровати (120 см)</span>
+                    </div>
+                    <div class="room-card__info">
+                      <span class="room-card__area">24 м²</span>
+                      <div class="room-card__comfort comfort">
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cold"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#4k"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cup-hot"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#snowflake"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#safe"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#wifi"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#car"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#window"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#foot"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="room-card__buttons box-buttons">
+                      <button
+                        type="button"
+                        class="btn btn--border box-buttons__left"
+                      >
+                        <svg class="icon">
+                          <use
+                            xlink:href="svg-sprite/svg-sprite.svg#info"
+                          ></use>
+                        </svg>
+                        <span>подробнее</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn--path box-buttons__right"
+                      >
+                        Забронировать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid__item">
+                <div class="room-card">
+                  <div class="room-card__wrapper">
+                    <h3 class="room-card__title">Стандарт двухместный</h3>
+                    <div class="room-card__desc">
+                      <svg class="icon room-card__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#user"></use>
+                      </svg>
+                      <svg class="icon room-card__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#user"></use>
+                      </svg>
+                      <span>1 двухспальная кровать (180 см)</span>
+                    </div>
+                    <div class="room-card__info">
+                      <span class="room-card__area">24 м²</span>
+                      <div class="room-card__comfort comfort">
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cold"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#4k"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cup-hot"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#snowflake"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#safe"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#wifi"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#car"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#window"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#foot"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="room-card__buttons box-buttons">
+                      <button
+                        type="button"
+                        class="btn btn--border box-buttons__left"
+                      >
+                        <svg class="icon">
+                          <use
+                            xlink:href="svg-sprite/svg-sprite.svg#info"
+                          ></use>
+                        </svg>
+                        <span>подробнее</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn--path box-buttons__right"
+                      >
+                        Забронировать
+                      </button>
+                    </div>
+                  </div>
+                  <img
+                    class="room-card__bg"
+                    src="images/content/room-duble2.png"
+                    alt="room-photo"
+                  />
+                </div>
+              </div>
+              <div class="grid__item">
+                <div class="room-card">
+                  <img
+                    class="room-card__bg"
+                    src="images/content/room-duble-comfort.png"
+                    alt="room-photo"
+                  />
+                  <div class="room-card__wrapper">
+                    <h3 class="room-card__title">Комфорт двухместный</h3>
+                    <div class="room-card__desc">
+                      <svg class="icon room-card__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#user"></use>
+                      </svg>
+                      <svg class="icon room-card__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#user"></use>
+                      </svg>
+                      <span>1 двухспальная кровать (180 см)</span>
+                    </div>
+                    <div class="room-card__info">
+                      <span class="room-card__area">25 м²</span>
+                      <div class="room-card__comfort comfort">
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cold"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#4k"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cup-hot"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#snowflake"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#safe"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#wifi"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#car"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#window"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cosmetic"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#robe"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="room-card__buttons box-buttons">
+                      <button
+                        type="button"
+                        class="btn btn--border box-buttons__left"
+                      >
+                        <svg class="icon">
+                          <use
+                            xlink:href="svg-sprite/svg-sprite.svg#info"
+                          ></use>
+                        </svg>
+                        <span>подробнее</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn--path box-buttons__right"
+                      >
+                        Забронировать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid__item grid__item--big">
+                <div class="room-card room-card--big">
+                  <img
+                    class="room-card__bg"
+                    src="images/content/room-lux.jpg"
+                    alt="room-photo"
+                  />
+                  <div class="room-card__wrapper room-card__wrapper--left">
+                    <h3 class="room-card__title">Люкс</h3>
+                    <div class="room-card__desc">
+                      <svg class="icon room-card__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#user"></use>
+                      </svg>
+                      <svg class="icon room-card__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#user"></use>
+                      </svg>
+                      <span>1 двухспальная кровать (180 см)</span>
+                    </div>
+                    <div class="room-card__info">
+                      <span class="room-card__area">44 м²</span>
+                      <div class="room-card__comfort comfort comfort--big">
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cold"
+                            ></use>
+                          </svg>
+                          <span>Кондиционер</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#4k"
+                            ></use>
+                          </svg>
+                          <span>Телевизор</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cup-hot"
+                            ></use>
+                          </svg>
+                          <span>Чайник и чайный набор</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#snowflake"
+                            ></use>
+                          </svg>
+                          <span>Холодильник</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#safe"
+                            ></use>
+                          </svg>
+                          <span>Сейф</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#wifi"
+                            ></use>
+                          </svg>
+                          <span>Бесплатный Wi-fi</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cosmetic"
+                            ></use>
+                          </svg>
+                          <span>Косметический набор</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#car"
+                            ></use>
+                          </svg>
+                          <span>Бесплатная парковка</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#window"
+                            ></use>
+                          </svg>
+                          <span>Панорамные окна</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#robe"
+                            ></use>
+                          </svg>
+                          <span>Халат и тапочки</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="room-card__buttons box-buttons">
+                      <button
+                        type="button"
+                        class="btn btn--border box-buttons__left"
+                      >
+                        <svg class="icon">
+                          <use
+                            xlink:href="svg-sprite/svg-sprite.svg#info"
+                          ></use>
+                        </svg>
+                        <span>подробнее</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn--path box-buttons__right"
+                      >
+                        Забронировать
+                      </button>
+                    </div>
+                  </div>
+                  <div class="room-card__wrapper room-card__wrapper--right">
+                    <div class="room-card__info">
+                      <div class="room-card__comfort comfort comfort--big">
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cold"
+                            ></use>
+                          </svg>
+                          <span>Кондиционер</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#4k"
+                            ></use>
+                          </svg>
+                          <span>Телевизор</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cup-hot"
+                            ></use>
+                          </svg>
+                          <span>Чайник и чайный набор</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#snowflake"
+                            ></use>
+                          </svg>
+                          <span>Холодильник</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#safe"
+                            ></use>
+                          </svg>
+                          <span>Сейф</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#wifi"
+                            ></use>
+                          </svg>
+                          <span>Бесплатный Wi-fi</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#cosmetic"
+                            ></use>
+                          </svg>
+                          <span>Косметический набор</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#car"
+                            ></use>
+                          </svg>
+                          <span>Бесплатная парковка</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#window"
+                            ></use>
+                          </svg>
+                          <span>Панорамные окна</span>
+                        </div>
+                        <div class="comfort__item">
+                          <svg class="icon">
+                            <use
+                              xlink:href="svg-sprite/svg-sprite.svg#robe"
+                            ></use>
+                          </svg>
+                          <span>Халат и тапочки</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section main__section">
+        <div class="container">
+          <div class="section__wrapper">
+            <h2 class="section__title title">услуги</h2>
+            <div
+              class="services__bloc row row-cols-1 row-cols-sm-2 row-cols-md-3"
+            >
+              <div class="col">
+                <div class="services__item card-activities">
+                  <pictire class="card-activities__icon"> </pictire>
+                  <span class="card-activities__desc"
+                    >Работаем для вас 24/7</span
+                  >
+                </div>
+              </div>
+              <div class="col">
+                <div class="services__item card-activities">
+                  <pictire class="card-activities__icon"> </pictire>
+                  <span class="card-activities__desc">Бесплатная парковка</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="services__item card-activities">
+                  <pictire class="card-activities__icon"> </pictire>
+                  <span class="card-activities__desc">Бесплатный Wi-fi</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="services__item card-activities">
+                  <pictire class="card-activities__icon"> </pictire>
+                  <span class="card-activities__desc">вкусные завтраки</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="services__item card-activities">
+                  <pictire class="card-activities__icon"> </pictire>
+                  <span class="card-activities__desc">Конференц-зал</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="services__item card-activities">
+                  <pictire class="card-activities__icon"> </pictire>
+                  <span class="card-activities__desc">тренажерный зал</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section main__section">
+        <div class="container">
+          <div class="gallery__wrapper">
+            <h2 class="section__title title">Фотогалерея</h2>
+            <div class="gallery__sliders">
+              <!-- Slider main container -->
+              <div class="swiper gallery-main gallery__main-slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper gallery-main__wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide gallery-main__slide">
+                    <a
+                      href="images/content/gallery-slide_1.png"
+                      class="gallery-preview__photo glightbox"
+                    >
+                      <img
+                        src="images/content/gallery-slide_1.png"
+                        alt="room"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide gallery-main__slide">
+                    <a
+                      href="images/content/gallery-slide_2.jpg"
+                      class="gallery-preview__photo glightbox"
+                    >
+                      <img
+                        src="images/content/gallery-slide_2.jpg"
+                        alt="room"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide gallery-main__slide">
+                    <a
+                      href="images/content/gallery-slide_3.jpg"
+                      class="gallery-preview__photo glightbox"
+                    >
+                      <img
+                        src="images/content/gallery-slide_3.jpg"
+                        alt="room"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide gallery-main__slide">
+                    <a
+                      href="images/content/gallery-slide_4.jpg"
+                      class="gallery-preview__photo glightbox"
+                    >
+                      <img
+                        src="images/content/gallery-slide_4.jpg"
+                        alt="room"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__preview">
+                <div class="swiper gallery-preview">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper gallery-preview__wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide gallery-preview__slide">
+                      <picture class="gallery-preview__photo">
+                        <img
+                          src="images/content/gallery-slide_1.png"
+                          alt="room"
+                        />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide gallery-preview__slide">
+                      <picture class="gallery-preview__photo">
+                        <img
+                          src="images/content/gallery-slide_2.jpg"
+                          alt="room"
+                        />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide gallery-preview__slide">
+                      <picture class="gallery-preview__photo">
+                        <img
+                          src="images/content/gallery-slide_3.jpg"
+                          alt="room"
+                        />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide gallery-preview__slide">
+                      <picture class="gallery-preview__photo">
+                        <img
+                          src="images/content/gallery-slide_4.jpg"
+                          alt="room"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar gallery-preview__scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section page__section">
+        <div class="container">
+          <div class="section__wrapper">
+            <h2 class="section__title title">Особенности отеля</h2>
+            <div
+              class="services__bloc row row-cols-1 row-cols-sm-2 row-cols-md-3"
+            >
+              <div class="col">
+                <div class="services__item card-activities">
+                  <pictire class="card-activities__icon"> </pictire>
+                  <span class="card-activities__desc">до аэропорта</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="services__item card-activities">
+                  <pictire class="card-activities__icon"> </pictire>
+                  <span class="card-activities__desc">10 минут</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="services__item card-activities">
+                  <pictire class="card-activities__icon"> </pictire>
+                  <span class="card-activities__desc"
+                    >предоставляем бесплатно</span
+                  >
+                </div>
+              </div>
+              <div class="col">
+                <div class="services__item card-activities">
+                  <pictire class="card-activities__icon"> </pictire>
+                  <span class="card-activities__desc">европейская кухня</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="services__item card-activities">
+                  <pictire class="card-activities__icon"> </pictire>
+                  <span class="card-activities__desc"
+                    >возможность проведения банкета</span
+                  >
+                </div>
+              </div>
+              <div class="col">
+                <div class="services__item card-activities">
+                  <pictire class="card-activities__icon"> </pictire>
+                  <span class="card-activities__desc">лифт</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/ Section-->
+
+      <!--Popup--><!--/ Popup-->
+    </main>
+    <!-- / Main -->
+
+    <!-- Footer -->
+    <footer class="page__footer footer section">
+      <div class="contacts">
+        <div class="container">
+          <div class="contacts__wrapper">
+            <h2 class="title section__title">контакты</h2>
+            <div class="contacts__box">
+              <div class="contacts-list">
+                <div class="contacts-list__section">
+                  <span>Россия, Москва, ул. Молодогвардейская, 63-65</span>
+                </div>
+                <div class="contacts-list__section">
+                  <ul>
+                    <li>
+                      <a href="mailto:molodezhkahotel@gmail.com">
+                        <svg class="icon">
+                          <use
+                            xlink:href="svg-sprite/svg-sprite.svg#phone"
+                          ></use>
+                        </svg>
+                        molodezhkahotel@gmail.com
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tel:+7(968)4400600">
+                        <svg class="icon">
+                          <use
+                            xlink:href="svg-sprite/svg-sprite.svg#male"
+                          ></use>
+                        </svg>
+                        +7 (968) 4-400-600
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg class="icon">
+                          <use
+                            xlink:href="svg-sprite/svg-sprite.svg#whatsup"
+                          ></use>
+                        </svg>
+                        WhatsApp
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contacts__map" id="map"></div>
+              <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<ваш API-ключ>"></script>
+            </div>
+            <div class="contacts__info contact-info">
+              <div class="contact-info__section">
+                <ul class="info-details">
+                  <li class="info-details__item">
+                    <a href="#" class="info-details__link">Договор оферты</a>
+                  </li>
+                  <li class="info-details__item">
+                    <a href="#" class="info-details__link"
+                      >Правила проживания</a
+                    >
+                  </li>
+                  <li class="info-details__item">
+                    <a href="#" class="info-details__link"
+                      >Политика конфиденциальности</a
+                    >
+                  </li>
+                  <li class="info-details__item">
+                    <a href="#" class="info-details__link">Оплата</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contact-info__section">
+                <div class="info-us">
+                  <span class="info-us__name">Мы на </span>
+                  <ul class="info-us__list">
+                    <li class="info-us__item">
+                      <a href="#" class="info-us__link">Bronevik</a>
+                    </li>
+                    <li class="info-us__item">
+                      <a href="#" class="info-us__link">101 Hotels</a>
+                    </li>
+                    <li class="info-us__item">
+                      <a href="#" class="info-us__link">OneTwoTrip</a>
+                    </li>
+                    <li class="info-us__item">
+                      <a href="#" class="info-us__link">Академсервис</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="container">
+          <span class="copyright"
+            >©️ Молодёжка Гостиница, 2022. Все права защищены</span
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- / Footer -->
+  </div>
+</div>
+<!-- / Page -->
+
+@@include('includes/footer.html')
+
+<!-- <svg class="icon">
+	<use xlink:href="svg-sprite/svg-sprite.svg#user"></use>
+</svg>  -->

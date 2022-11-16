@@ -1,0 +1,30 @@
+   // style.scss
+
+// Style
+
+// Common
+
+@import './fonts.scss';
+@import './reset.scss';
+@import './params.scss';
+
+// Plugins
+@import './plugins/swiper.min.scss';
+@import './plugins/glightbox.min.scss';
+
+//Blocks
+@import './blocks/grid.scss';
+@import './blocks/settings.scss';
+@import './blocks/banner.scss';
+@import './blocks/calendar.scss';
+@import './blocks/category.scss';
+@import './blocks/services.scss';
+@import './blocks/gallery.scss';
+@import './blocks/contacts.scss';
+@import './blocks/datepicker.scss';
+
+
+// Footer/header
+
+@import './blocks/header.scss';
+@import './blocks/footer.scss';
