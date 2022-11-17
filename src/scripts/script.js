@@ -19,5 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
    @@include('./blocks/counter.js');
    @@include('./blocks/map.js');
    @@include('./blocks/init.js');
+   @@include('./blocks/popup.js');
    @@include('./blocks/datepicker-init.js');
 }); 

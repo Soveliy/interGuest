@@ -1,0 +1,165 @@
+.body {
+   &__popup {
+      display: none;
+      opacity: 0;
+      position: fixed;
+      overflow: auto;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(54, 54, 54, 0.5);
+      z-index: 100;
+      transition: all 0.2s linear;
+      &--active {
+         transition: all 0.2s linear;
+         display: block;
+         opacity: 1;
+      }
+   }
+}
+
+.popup {
+   &__box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 100%;
+   }
+
+   &__window {
+      width: 100%;
+      max-width: 100%;
+      background-color: $primary;
+      padding: 75px 15px;
+      position: relative;
+      @media screen and (min-width: 768px) {
+         padding: 80px 20px;
+      }
+   }
+
+
+   &__close {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 0;
+      &::before,
+      &::after {
+         content: '';
+         display: block;
+         width: 100%;
+         height: 2px;
+         background-color: $secondary;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transition: background-color 0.2s linear;
+      }
+
+      &::before {
+         transform: translateX(-50%) rotate(45deg);
+      }
+      &::after {
+         transform: translateX(-50%) rotate(-45deg);
+      }
+
+      &:hover {
+         &::before,
+         &::after {
+            background-color: $background;
+         }
+      }
+   }
+
+   &__slider {
+      max-width: 860px;
+      min-width: 1px;
+   }
+
+   &__card {
+      .room-card__wrapper {
+         padding: 0;
+      }
+      .room-card--big .room-card__wrapper--right {
+         display: none;
+      }
+      .room-card--big .room-card__wrapper--left .room-card__info .comfort--big {
+         display: flex;
+      }
+
+      .room-card--big .room-card__wrapper--left .room-card__info .room-card__area {
+         margin-bottom: 23px;
+      }
+
+      .room-card--big .room-card__info {
+         flex-direction: column;
+      }
+
+      .room-card__comfort {
+         margin-left: 0;
+         width: 100%;
+         span {
+            display: block;
+         }
+      }
+
+      .comfort {
+         gap: 0;
+      }
+
+      .comfort__item {
+         width: 50%;
+      }
+
+      .box-buttons__right {
+         position: fixed;
+         bottom: 0;
+         right: 0;
+         width: 100%;
+
+         @media screen and (min-width: 768px) {
+            position: static;
+            width: auto;
+         }
+      }
+      @media screen and (min-width: 1360px) {
+         flex: 0 0 420px;
+         margin-left: 40px;
+      }
+   }
+}
+
+.popup-card {
+   display: flex;
+   margin: 0 auto;
+   flex-direction: column;
+   @media screen and (min-width: 1360px) {
+      flex-direction: row;
+   }
+
+   .gallery {
+      &__sliders {
+         flex-direction: column;
+      }
+
+      &__preview {
+         width: 100%;
+         height: 125px;
+         padding: 20px 0;
+         @media screen and (min-width: 768px) {
+            height: 120px;
+         }
+         @media screen and (min-width: 1360px) {
+            height: 131px;
+            padding-bottom: 0;
+         }
+      }
+   }
+}

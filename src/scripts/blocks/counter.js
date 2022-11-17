@@ -46,8 +46,6 @@ window.app.Counter = () => {
       }
    });
 
-   console.log('');
-
 };
 
 window.app.Counter();

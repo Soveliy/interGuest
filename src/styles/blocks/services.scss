@@ -13,6 +13,17 @@
    padding: 5px 34px 5px 0;
    overflow: hidden;
 
+   &__icon {
+      margin-right: 15px;
+      @media screen and (min-width: 768px) {
+         margin-right: 20px;
+      }
+
+      @media screen and (min-width: 1360px) {
+         margin-right: 25px;
+      }
+   }
+
    &__desc {
       font-weight: 500;
       font-size: 20px;
