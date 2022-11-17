@@ -38,16 +38,17 @@
          height: auto;
       }
 
-      .swiper-slide-active {
-         .gallery-preview__photo {
-            transition: all 0.2s linear;
-            border: 2px solid transparent;
+      .gallery-preview__photo {
+         transition: all 0.2s linear;
+         border: 2px solid transparent;
+         &:hover {
+            background-color: #FFF;
          }
       }
 
       .swiper-slide-thumb-active {
          .gallery-preview__photo {
-            border: 2px solid #CC9C63;
+            border-color: $secondary;
          }
       }
    }
@@ -104,9 +105,14 @@
       height: 5px;
       background: rgba(255, 255, 255, 0.3);
       .swiper-scrollbar-drag {
-         background-color: #CC9C63;
+         background-color: $secondary;
          height: 100%;
          width: auto;
+         transition: background-color 0.2s linear;
+         cursor: pointer;
+         &:hover {
+            background-color: #cc9d63d8;
+         }
       }
       @media screen and (min-width: 768px) {
          height: 100%;
@@ -145,7 +151,7 @@
 
       &--prev {
          left: 0;
-         transform: translate(50%, -50%);
+         transform: translate(0, -50%);
          .icon {
             transform: rotate(180deg);
          }
@@ -153,7 +159,7 @@
 
       &--next {
          right: 0;
-         transform: translate(50%, -50%);
+         transform: translate(0, -50%);
       }
 
       &:active {

@@ -1,7 +1,5 @@
 .body {
    &__popup {
-      display: none;
-      opacity: 0;
       position: fixed;
       overflow: auto;
       left: 0;
@@ -14,7 +12,6 @@
       &--active {
          transition: all 0.2s linear;
          display: block;
-         opacity: 1;
       }
    }
 }
@@ -150,6 +147,13 @@
          flex-direction: column;
       }
 
+      .gallery-preview {
+         padding-top: 0;
+         padding-bottom: 0;
+         padding-right: 10px;
+         padding-left: 10px;
+      }
+
       &__preview {
          width: 100%;
          height: 125px;
@@ -161,6 +165,10 @@
             height: 131px;
             padding-bottom: 0;
          }
+      }
+
+      .gallery-preview__btn.swiper-button-disabled {
+         display: none;
       }
    }
 }

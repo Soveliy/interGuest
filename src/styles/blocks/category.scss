@@ -101,7 +101,7 @@
    &__wrapper {
       position: relative;
       background-color: $primary;
-      padding: 10px 15px;
+      padding: 15px;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -148,11 +148,7 @@
       }
 
       @media screen and (min-width: 768px) {
-         padding: 10px 20px;
-      }
-   
-      @media screen and (min-width: 1360px) {
-         padding: 15px 20px;
+         padding: 20px;
       }
    }
 

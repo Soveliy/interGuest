@@ -60,11 +60,11 @@ button {
       background-color: $secondary;
       position: relative;
       &:hover {
-         background-color: #E8BC89;
+         background-color: $primary;
       }
 
       &:active {
-         background-color: #E8BC89;
+         background-color: $primary;
       }
 
       &::after {
