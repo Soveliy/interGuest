@@ -19,6 +19,7 @@ window.app.Sliders = () => {
             spaceBetween: 15,
             scrollbar: {
                el: '.gallery-preview__scrollbar',
+               draggable: true,
              },
             breakpoints: {
                768: {
