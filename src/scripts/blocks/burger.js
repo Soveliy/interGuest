@@ -5,7 +5,7 @@ window.app.openBurger = () => {
 
    if (burger) {
       burger.addEventListener('click', () => {
-         let menu = document.querySelector('.menu__list');
+         let menu   = document.querySelector('.menu__list');
          let burger = document.querySelector('.burger');
          menu.classList.toggle('menu__list--active');
          burger.classList.toggle('burger--active');

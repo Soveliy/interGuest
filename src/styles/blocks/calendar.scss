@@ -33,15 +33,18 @@
       position: relative;
       width: 100%;
       cursor: pointer;
+   }
+
+   &__btn {
+      position: absolute;
+      top: 50%;
+      right: 14px;
+      transform: translateY(-50%);
       .icon {
          width: 18px;
          height: 18px;
          fill: $secondary;
-
-         position: absolute;
-         top: 50%;
-         right: 14px;
-         transform: translateY(-50%);
+         transition: all 0.2s linear;
          @media screen and (min-width: 768px) {
             height: 20px;
             width: 20px;
@@ -49,8 +52,21 @@
          }
       
          @media screen and (min-width: 1360px) {
-            height: 60px;
             right: 10px;
+         }
+      }
+
+      &--active {
+         .icon {
+            transform: rotate(180deg);
+         }
+      }
+   }
+
+   &:hover {
+      .field__btn {
+         .icon {
+            fill: #E8BC89;
          }
       }
    }
@@ -86,14 +102,21 @@
       top: 102%;
       width: 100%;
       background-color: #FFF;
-      li {
-         padding: 10px;
-         color: $primary;
-         transition: all 0.2s linear;
-         &:hover {
-            background-color: $secondary;
-            color: #FFF;
-         }
+
+      max-height: 0px;
+      overflow: hidden;
+      transition: all 0.1s linear;
+   }
+
+   &__label {
+      display: block;
+      padding: 10px;
+      color: $primary;
+      transition: all 0.2s linear;
+      cursor: pointer;
+      &:hover {
+         background-color: $secondary;
+         color: #FFF;
       }
    }
 }
