@@ -106,6 +106,7 @@
       max-height: 0px;
       overflow: hidden;
       transition: all 0.1s linear;
+      z-index: 20;
    }
 
    &__label {

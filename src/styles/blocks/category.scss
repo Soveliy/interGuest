@@ -122,6 +122,31 @@
          }
       }
 
+      &--right {
+         display: none;
+         .room-card__info {
+            display: none;
+         }
+         @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            .room-card__info {
+               display: block;
+               margin: none;
+               .comfort--big {
+                  margin-bottom: -20px;
+               }
+            }
+         }
+
+         @media screen and (min-width: 1360px) {
+            display: none;
+            .room-card__info {
+               display: none;
+            }
+         }
+      }
+
       @media screen and (min-width: 768px) {
          padding: 10px 20px;
       }
@@ -299,31 +324,6 @@
                      .comfort--big {
                         display: flex;
                      }
-                  }
-               }
-            }
-
-            &--right {
-               display: none;
-               .room-card__info {
-                  display: none;
-               }
-               @media screen and (min-width: 768px) {
-                  display: flex;
-                  flex-direction: column;
-                  .room-card__info {
-                     display: block;
-                     margin: none;
-                     .comfort--big {
-                        margin-bottom: -20px;
-                     }
-                  }
-               }
-
-               @media screen and (min-width: 1360px) {
-                  display: none;
-                  .room-card__info {
-                     display: none;
                   }
                }
             }

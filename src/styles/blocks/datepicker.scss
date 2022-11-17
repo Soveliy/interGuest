@@ -1,12 +1,17 @@
 .ui-datepicker {
    display: flex;
+   flex-direction: column;
    background-color: #FFF;
    padding: 20px;
    z-index: 99 !important;
    left: 50% !important;
    top: 50% !important;
-   transform: translateX(-50%);
+   transform: translate(-50%, -35%);
    width: auto !important;
+   @media screen and (min-width: 768px) {
+      flex-direction: row;
+      transform: translateX(-50%);
+   }
 }
 
 .ui-datepicker-calendar {

@@ -43,8 +43,9 @@ window.app.Sliders = () => {
             el: '.go-js-gallery-slider-popup-2',
             slidesPerView: 2,
             spaceBetween: 15,
-            scrollbar: {
-               el: '.gallery-preview__scrollbar',
+            navigation: {
+               nextEl: '.gallery-preview__btn--next',
+               prevEl: '.gallery-preview__btn--prev',
              },
             breakpoints: {
                768: {

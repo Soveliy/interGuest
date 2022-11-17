@@ -20,5 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
    @@include('./blocks/map.js');
    @@include('./blocks/init.js');
    @@include('./blocks/popup.js');
+   @@include('./blocks/scroll-top.js');
    @@include('./blocks/datepicker-init.js');
 }); 

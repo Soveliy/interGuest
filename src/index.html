@@ -71,6 +71,7 @@
               <form
                 class="calendar__wrapper form row row-cols-1 row-cols-sm-2 row-cols-md-4"
               >
+
                 <div class="field form__field col">
                   <label class="field__label">
                     <input
@@ -89,6 +90,7 @@
                     </button>
                   </label>
                 </div>
+
                 <div class="field form__field col">
                   <label class="field__label">
                     <input
@@ -107,6 +109,7 @@
                     </button>
                   </label>
                 </div>
+
                 <div class="field form__field col">
                   <label class="field__label quantity js-quantity">
                     <div class="quantity__header">
@@ -159,6 +162,7 @@
                     </ul>
                   </label>
                 </div>
+                
                 <div class="col">
                   <button type="button" class="btn calendar__btn">
                     Найти номер
@@ -1240,7 +1244,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://wa.me/+7(968)4400600">
                         <svg class="icon">
                           <use
                             xlink:href="svg-sprite/svg-sprite.svg#whatsup"
@@ -1313,6 +1317,8 @@
     </footer>
     <!-- / Footer -->
   </div>
+  <button type="button" id="scroll-top" class="page__btn">
+  </button>
 </div>
 <!-- / Page -->
 <!--Popup-->
@@ -1421,7 +1427,16 @@
                   </div>
                 </div>
                 <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar gallery-preview__scrollbar"></div>
+                <div class="swiper-button-prev gallery-preview__btn gallery-preview__btn--prev">
+                  <svg class="icon">
+                    <use xlink:href="svg-sprite/svg-sprite.svg#arrow-slide"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-next gallery-preview__btn gallery-preview__btn--next">
+                  <svg class="icon">
+                    <use xlink:href="svg-sprite/svg-sprite.svg#arrow-slide"></use>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>

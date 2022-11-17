@@ -6,6 +6,30 @@ body {
 .page {
    overflow: hidden;
    min-height: 100%;
+   &__btn {
+      border: none;
+      width: 50px;
+      height: 50px;
+      background: url(../../images/icons/lock.svg) center no-repeat;
+      background-size: contain;
+      transition: all 0.4s linear;
+      position: fixed;
+      right: 33px;
+      bottom: 30%;
+      z-index: 30;
+      &:hover {
+         background: url(../../images/icons/up_page.svg) center no-repeat;
+      }
+      @media screen and (min-width: 768px) {
+         width: 70px;
+         height: 70px;      
+      }
+   
+      @media screen and (min-width: 1360px) {
+         width: 80px;
+         height: 80px;
+      }
+   }
 }
 
 body.lock {
