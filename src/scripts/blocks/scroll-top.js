@@ -2,17 +2,12 @@ window.app.Scrolltop = () => {
    window.onscroll = function() {scrollFunction()};
 
    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 20) {
          document.getElementById("scroll-top").style.display = "block";
       } else {
          document.getElementById("scroll-top").style.display = "none";
       }
    }
-
-   function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-   } 
 };
 
 window.app.Scrolltop();

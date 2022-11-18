@@ -1,13 +1,3 @@
-
-// @mixin for-lg(){
-//    @media (min-width:992px){
-//       @content
-//    }
-// }
-
-// @include for-lg(){ 
-
-// }
 .grid {
    display: grid;
    grid-template-columns: repeat(1, 1fr);

@@ -8,8 +8,8 @@ body {
    min-height: 100%;
    &__btn {
       border: none;
-      width: 50px;
-      height: 50px;
+      width: 80px;
+      height: 80px;
       background: url(../../images/icons/lock.svg) center no-repeat;
       background-size: contain;
       transition: all 0.4s linear;
@@ -19,15 +19,7 @@ body {
       z-index: 30;
       &:hover {
          background: url(../../images/icons/up_page.svg) center no-repeat;
-      }
-      @media screen and (min-width: 768px) {
-         width: 70px;
-         height: 70px;      
-      }
-   
-      @media screen and (min-width: 1360px) {
-         width: 80px;
-         height: 80px;
+         background-size: contain;
       }
    }
 }
@@ -44,7 +36,7 @@ button {
 }
 
 .btn {
-   padding: 19px;
+   padding: 18px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -59,27 +51,13 @@ button {
    &--path {
       background-color: $secondary;
       position: relative;
+      clip-path: polygon(100% 0,100% 67%,90% 100%,0 100%,0 0);
       &:hover {
          background-color: $primary;
       }
 
       &:active {
          background-color: $primary;
-      }
-
-      &::after {
-         content: '';
-         display: block;
-
-         position: absolute;
-         bottom: 0;
-         right: 0;
-
-         width: 0;
-         height: 0;
-         border-bottom: 20px solid $primary; 
-         border-left: 20px solid transparent;
-         pointer-events: none;
       }
    }
 
@@ -110,6 +88,10 @@ button {
       &:hover {
          background-color: $secondary;
       }
+   }
+
+   @media screen and (min-width: 768px) {
+      padding: 22px;
    }
 }
 

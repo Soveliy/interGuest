@@ -1,7 +1,7 @@
 @@include('includes/header.html', { 'title' : 'New Project' })
 
 <!-- Page -->
-<div class="page">
+<div class="page" id="top">
   <div class="page__box">
     <!-- Header -->
     <header class="page__header header">
@@ -1317,8 +1317,8 @@
     </footer>
     <!-- / Footer -->
   </div>
-  <button onclick="topFunction()" type="button" id="scroll-top" class="page__btn">
-  </button>
+  <a href="#top" onclick="topFunction()" type="button" id="scroll-top" class="page__btn js-anchor">
+  </a>
 </div>
 <!-- / Page -->
 <!--Popup-->
@@ -1524,7 +1524,7 @@
                 </div>
               </div>
               <div class="room-card__buttons box-buttons">
-                <button type="button" class="btn btn--path box-buttons__right">
+                <button type="button" class="btn box-buttons__right">
                   Забронировать
                 </button>
               </div>

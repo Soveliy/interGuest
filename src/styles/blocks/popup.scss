@@ -1,5 +1,6 @@
 .body {
    &__popup {
+      display: none;
       position: fixed;
       overflow: auto;
       left: 0;
@@ -121,10 +122,13 @@
          bottom: 0;
          right: 0;
          width: 100%;
+         background-color: $secondary;
 
          @media screen and (min-width: 768px) {
             position: static;
             width: auto;
+            flex: 0 0 auto;
+            clip-path: polygon(100% 0,100% 67%,90% 100%,0 100%,0 0);
          }
       }
       @media screen and (min-width: 1360px) {
